@@ -4,15 +4,15 @@ Training performed on [The Movies Dataset](https://www.kaggle.com/rounakbanik/th
 
 ## Requirements
 - [Docker](https://docs.docker.com/get-docker/)
-- [Nvidia CUDA 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive)
-- [Nvidia cuDNN 8](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
-- [Nvidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
+- [NVIDIA CUDA 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive)
+- [NVIDIA cuDNN 8](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
+- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
 ## Usage
 clone repository and cd to code directory
 ```bash
-git clone https://github.com/AlessioMongelluzzo/movie_genre_classifier.git
-cd movie_genre_classifier/code/
+git clone https://github.com/AlessioMongelluzzo/movie_genre_classifier_cuda.git
+cd movie_genre_classifier_cuda/code/
 ```
 build the container
 ```bash
