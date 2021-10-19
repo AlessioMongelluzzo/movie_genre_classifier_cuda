@@ -19,9 +19,16 @@ build the container
 (sudo) docker build -t genclf .
 ```
 run the container and publish port 5000 (model app runs on port 5000)
+
+IF YOU HAVE A GPU:
 ```bash
 (sudo) docker run --privileged --gpus all -d -p 5000:5000 genclf
 ```
+ELSE:
+```bash
+(sudo) docker run --privileged -d -p 5000:5000 genclf
+```
+
 ## Testing
 The model runs on http://localhost:5000/, you can test inference by performing a POST API request to http://localhost:5000/predict with a JSON payload like
 ```json
